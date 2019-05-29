@@ -2,6 +2,9 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 
 The main goal of this project is to document endpoints in the RotMG appspot API. All links (at least the ones we can find), old or new, are posted here.
 
+## Site URL
+ - https://www.realmofthemadgod.com
+
 ## Root URL
 - https://realmofthemadgodhrd.appspot.com
 - https://realmofthemadgod.appspot.com (used before kabam account migration)
@@ -10,6 +13,8 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
+- https://test.realmofthemadgod.com
+- https://testing.realmofthemadgod.com 
 
 Directories marked with an asterisk (*) are internal server urls and will always return ``<Failure/>``
 
@@ -57,6 +62,7 @@ Please note that deca can add or remove links at any time.
  * ``done``
  * ``error``
  * ``kabamadd`` => no longer exists
+ * ``token``
 
 ``picture/`` => Seems to redirect to google login now
  * ``list``
@@ -95,6 +101,7 @@ Please note that deca can add or remove links at any time.
  * ``verifyage`` => guid, password
  * ``acceptTOS`` => guid, password
  * ``changeEmail``
+ * ``isEmailVerified``
  * ``playFortuneGame`` => id (likely)
  * ``rp``
  * ``login``
@@ -103,7 +110,7 @@ Please note that deca can add or remove links at any time.
  * ``supportVerify`` => guid, password, secret
  * ``*addStar``
  * ``*addIgnore``
- * ``purchaseCharSlot`` => guid, password
+ * ``purchaseCharSlot`` or ``puzchaseCharSlot`` => guid, password
  * ``*purchaseVaultChest``
  * ``purchaseSkin`` => guid, password, (skin?)
  * ``purchaseMysteryBox`` => guid, password, id
@@ -135,6 +142,7 @@ Please note that deca can add or remove links at any time.
 ``dailyquest/``
  Looks like a regular stub, but it may be dangerous for account
  * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
+ * ``resetDailyQuestsAdmin`` => 
 
 ``char/``
  * ``list`` => guid, password
@@ -181,6 +189,7 @@ Please note that deca can add or remove links at any time.
 ``kabam/``
  * ``getcredentials`` => userId
  * ``link``
+ * ``verify``
 
 ``migrate/``
  * ``doMigration``
@@ -198,7 +207,8 @@ Please note that deca can add or remove links at any time.
  * ``getcredentials`` => userId
  * ``register`` => userId
  * ``link`` (disabled)
-
+ * ``internalRegister``
+ 
 ``clientError/``
  * ``add``
 
@@ -207,6 +217,8 @@ Please note that deca can add or remove links at any time.
 
 ``sfx/``
  * => too many mp3 files to list (you can find these in pserver sources)
+ * ``level_up.mp3``
+ * ``death_screen.mp3``
  
 ``music/``
  * ``sorc.mp3`` => main theme for realm
